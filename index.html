@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<head>
+<title>Konoha.ru</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="style\style.css">
+<link rel="stylesheet" href="style\Footer.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script language="javascript">
+startdate = new Date();
+clockStart = startdate.getTime();
+function initStopwatch() {
+  var thisTime = new Date();
+  return (thisTime.getTime() - clockStart)/1000;
+}
+function getSecs() {
+  var tSecs = Math.round(initStopwatch());
+  var iSecs = tSecs % 60;
+  var iMins = Math.round((tSecs-30)/60);
+  var sSecs ="" + ((iSecs > 9) ? iSecs : "0" + iSecs);
+  var sMins ="" + ((iMins > 9) ? iMins : "0" + iMins);
+  document.getElementById("timer-counter").innerHTML = sMins+":"+sSecs;
+  setTimeout('getSecs()', 1000);
+}
+</script>
+        
+</head>
+<body onLoad="getSecs()">
+	<header class="header">
+	   <div class="container">
+	   	<div class="header_in">
+	   	<div class="logo">Мир шиноби</div>
+		 <nav class="nav">
+		   <a class="link" href="reg.html">Регистрация</a>
+		   <a class="link" href="vxod.html">Вход</a>
+		   <a class="link" href="https://jut.su/">Смотреть онайн</a>
+		  <div class="time">Вы здесь уже:</div>
+		<span id='timer-counter' style='color:red;font-size:150%;font-weight:bold;'></span>
+	     </nav>
+	   </div>
+	   </div>
+    </header>
+	<main>
+		<p><a name="top1"></a></p>
+		<div class="container">
+			<div class="intro_w">
+			<h1 class="main_w">ДОБРО ПОЖАЛОВАТЬ</h1>
+			<script>
+            $("h1").fadeOut(10000).fadeIn(30000000);
+            </script>
+			</div>
+		</div>
+
+		<div class="main_komand">
+			<div class="container_ras">
+				<div class="title_sas">
+					Члены команды номер 7.
+				</div>
+				<div class="wow">
+				<div class="cal-3">
+					<div class="image_sas">
+						<img src="3.jpg" alt="Учиха Саске" width="400" height="450">
+					</div>
+					<div class="title_sas">
+						<a href="saske.html">Учиха Саске</a>
+					</div>
+					<div class="text_sas">
+						Последний представитель клана Учиха.
+					</div>
+				</div>
+
+				<div class="cal-3">
+					<div class="image_sas">
+						<img src="4.jpg" alt="Сакура Харуно" width="400" height="450">
+					</div>
+					<div class="title_sas">
+						<a href="sakyra.html">Сакура Харуно</a>
+					</div>
+					<div class="text_sas">
+						Медик, ученица 5-й Хокаге.
+					</div>
+				</div>
+
+				<div class="cal-3">
+					<div class="image_sas">
+						<img src="5.jpg" alt="Наруто Узумаки" width="400" height="450">
+					</div>
+					<div class="title_sas">
+						<a href="naruto.html">Наруто Узумаки</a>
+					</div>
+					<div class="text_sas">
+						Джинчурики 9-ти хвостого, сын 4-го Хокаге.
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<div class="content">
+</div>
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h5>Меню</h5>
+                    <ul>
+                        <li><a href="#top1">Главная старинца</a></li>
+                        <li><a href="https://vk.com/89kiryusha89">Тех.Поддержка</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Наша контора</h5>
+                    <ul>
+                        <li><a href="https://vk.com/jijibrto">Специалист JS</a></li>
+                        <li><a href="https://vk.com/nuvarov307">Мотиватор</a></li>
+                        <li><a href="https://vk.com/tinihegoneponiala">Главный разработчик</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Помощь</h5>
+                    <ul>
+                        <li><a href="https://www.cyberforum.ru/">Форум</a></li>
+                        <li><a href="https://vk.com/iitt_ncfu">Мы ВКонтакте</a></li>
+                        <li><a href="https://www.instagram.com/ncfu_iitt/">Мы в Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="https://twitter.com/bethesda" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/BethesdaSoftworks.eu/?brand_redir=383504665367382" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.google.com/gmail/" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2020 Винников Никита ИВТ-б-о-19-1 </p>
+        </div>
+    </footer>
+</body>
+</html>
